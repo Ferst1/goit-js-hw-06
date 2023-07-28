@@ -32,7 +32,6 @@ const galleryMarkup = images
 // Вставляем разметку галереи в список ul.gallery
 galleryList.insertAdjacentHTML("beforeend", galleryMarkup);
 
-// -------------------------------
 
 // ------Style Galery------//
 
