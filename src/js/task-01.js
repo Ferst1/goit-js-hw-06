@@ -5,15 +5,10 @@ const items = categoriesList.querySelectorAll("li.item");
 
 // Выводим в консоль количество категорий
 
-console.log("${items.length}");
+console.log(`Number of elements:${items.length}`);
 
 // Итерируемся по каждому элементу li.item
 items.forEach((item) => {
-  // Находим заголовок элемента
-  const heading = item.querySelector("h2");
-  // Находим все элементы li внутри текущей категории
-  const categoryItems = item.querySelectorAll("li");
-
   // Выводим текст заголовка и количество элементов в категории
 
   console.log("Category:", item.firstElementChild.textContent);

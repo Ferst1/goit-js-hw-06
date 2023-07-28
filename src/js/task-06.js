@@ -48,7 +48,8 @@ const inputEl = document.getElementById("validation-input");
 inputEl.addEventListener("blur", onBlur);
 
 function onBlur() {
-  const length = inputEl.value.length;
+  const inputValue = inputEl.value.trim();
+  const length = inputValue.length;
   const targetLenght = Number(inputEl.dataset.length);
 
   inputEl.classList.remove("valid", "invalid");
